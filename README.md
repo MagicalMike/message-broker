@@ -12,7 +12,7 @@ Message Broker uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) fo
 - [x] Pass JSON objects from sender to receiver;
 - [x] Add Message Queue functionality;
 - [x] Implement concurency;
-- [  ] Finish up application UI **- 92%**;
+- [ ] Finish up application UI **- 92%**;
 
 ## Help
 Use the links below to access a more in-depth explanation of each app: [**Not yet implemented.**]
