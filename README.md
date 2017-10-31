@@ -8,10 +8,11 @@ This is a collection of apps built using Cocoa and Swift 4 for the OSX containin
 Message Broker uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for TCP socket communication.
 
 ## Current Progress
-* [x] Establish connection between Sender and Server;
-* [x] Pass JSON objects from sender to receiver;
-* [x] Add Message Queue functionality;
-* [  ] Finish up application UI; **- 67%**
+- [x] Establish connection between Sender and Server;
+- [x] Pass JSON objects from sender to receiver;
+- [x] Add Message Queue functionality;
+- [x] Implement concurency;
+- [  ] Finish up application UI **- 92%**;
 
 ## Help
 Use the links below to access a more in-depth explanation of each app: [**Not yet implemented.**]

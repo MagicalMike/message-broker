@@ -27,25 +27,29 @@ class ListeningVC: NSViewController {
         messageTable.delegate = queueDelegate
         messageTable.dataSource = queueDataSource
         
-        listen()
+        DispatchQueue.global().async {
+            self.listen()
+        }
+        
     }
     
     func listen() {
-        
-        DispatchQueue.global().async {
-            while let client = self.server?.accept() {
+        while true {
+            if let client = self.server?.accept() {
                 self.notifyConnection(client: client)
-                
-                while true {
-                    if let response = client.read(1024) {
-                        let command = self.decode(bytes: response)!.command
-                        let message = self.decode(bytes: response)!.message
-                        
-                        self.notifyActivity(client: client, command: command, message: message)
-                        self.process(client: client, command: command, message: message)
-                        
+    
+                DispatchQueue.global().async {
+                    while(true) {
+                        if let response = client.read(1024) {
+                            let command = self.decode(bytes: response)!.command
+                            let message = self.decode(bytes: response)!.message
+                            
+                            self.notifyActivity(client: client, command: command, message: message)
+                            self.process(client: client, command: command, message: message)
+                        }
                     }
                 }
+                
             }
         }
     }
