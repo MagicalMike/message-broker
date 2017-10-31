@@ -38,4 +38,15 @@ class MessageStore {
         messages.append(attributedString)
     }
     
+    public static func addError(with message: String) {
+        let range = (message as NSString).range(of: message)
+        let color = NSColor.red
+        let attributedString = NSMutableAttributedString(string: message)
+        attributedString.addAttribute(.foregroundColor, value: color, range: range)
+        messages.append(attributedString)
+    }
+    
+    public static func reset() {
+        self.messages.removeAll()
+    }
 }

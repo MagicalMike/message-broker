@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525A0D031FA85BC200EC6017 /* Serializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525A0D021FA85BC200EC6017 /* Serializer.swift */; };
 		529370AC1FA76C87006EEB3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529370AB1FA76C87006EEB3B /* AppDelegate.swift */; };
 		529370AE1FA76C87006EEB3B /* MessagingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529370AD1FA76C87006EEB3B /* MessagingVC.swift */; };
 		529370B01FA76C87006EEB3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 529370AF1FA76C87006EEB3B /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		525A0D021FA85BC200EC6017 /* Serializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serializer.swift; sourceTree = "<group>"; };
 		529370A81FA76C87006EEB3B /* Sender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sender.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529370AB1FA76C87006EEB3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		529370AD1FA76C87006EEB3B /* MessagingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingVC.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				529370C01FA77671006EEB3B /* MessageProtocol.swift */,
 				529370C21FA77807006EEB3B /* TableDataSource.swift */,
 				529370C41FA77810006EEB3B /* TableDelegate.swift */,
+				525A0D021FA85BC200EC6017 /* Serializer.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 				529370AC1FA76C87006EEB3B /* AppDelegate.swift in Sources */,
 				529370C11FA77671006EEB3B /* MessageProtocol.swift in Sources */,
 				529370C71FA77A69006EEB3B /* CommandButton.swift in Sources */,
+				525A0D031FA85BC200EC6017 /* Serializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,7 +417,6 @@
 			baseConfigurationReference = F623ECE63DFA2A8D8CBDC94A /* Pods-Sender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Sender/Sender.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,7 +435,6 @@
 			baseConfigurationReference = 8618C3011BE758A21FCE3F09 /* Pods-Sender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Sender/Sender.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
