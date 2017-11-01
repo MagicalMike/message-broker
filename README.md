@@ -10,7 +10,7 @@ Message Broker uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) fo
 ## Current Progress
 
 ### Assignment 1: Message Queue
-- [x] Implement a communication protocol and describe it in a [markdown](www.google.com) file;
+- [x] Implement a communication protocol and describe it in a [markdown](docs/protocol-description.md) file;
 - [x] Pick a transport protocol and argument your choice;
 - [x] Implement the Message Queue;
 - [x] Implement concurency to allow multiple sending / receiving;

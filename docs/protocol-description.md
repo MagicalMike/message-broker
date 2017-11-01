@@ -10,7 +10,7 @@ The communication protocol can be displayed as a JSON as follows:
 ```json
 {
     "Command":"<PUT|GET|COUNT|RESPONSE|ERROR>"
-    "Content": <content>
+    "Content": "<content>"
 }
 ```
 or as a Swift array of dictionaries like this:
