@@ -22,4 +22,20 @@ class MessageStore {
         return nil
     }
     
+    static func save(data: Data, to path: String) {
+        
+        let paths = NSSearchPathForDirectoriesInDomains(.desktopDirectory, .userDomainMask, true)
+        let desktopPath = paths.first
+        guard let url = URL(fileURLWithPath: desktopPath) else {
+            return print("Could not obtain the desktop path")
+        }
+        
+        do {
+            try data.write(to: url)
+        } catch {
+            print("Could not write file to desktop")
+        }
+        
+    }
+    
 }

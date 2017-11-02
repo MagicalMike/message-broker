@@ -6,6 +6,7 @@ This is a collection of apps built using Cocoa and Swift 4 for the OSX containin
 * The _Receiver_ application, that obtains and displays the messages
 
 Message Broker uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for TCP socket communication.
+TCP was used as the transfer protocol to assure packet transmission.
 
 ## Current Progress
 

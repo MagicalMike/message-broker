@@ -48,4 +48,21 @@ class Serializer {
         return nil
     }
     
+    //Convert the message queue to JSON
+    static func convert(queue: [String]) -> [[String:String]]? {
+        var entries = [[String:String]]()
+        for entry in queue {
+            let dict = ["Content":entry]
+            entries.append(dict)
+        }
+        
+        let json = ["Messages":entries]
+        
+        if JSONSerialization.isValidJSONObject(json) {
+            return entries
+        }
+        return nil
+    }
+    
+    
 }
