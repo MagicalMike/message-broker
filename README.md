@@ -3,7 +3,8 @@
 
 Message Broker is an OSX app developed in Swift 4 that uses TCP client-server communication to implement certain message broking functionalities, such as GET / PUSH requests, Publisher - Subscriber mechanics and advanced routing technologies.
 
-The app uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for its TCP/UDP transport capabilities.  Visit [Protocol Description](https://github.com/MagicalMike/message-broker/blob/master/docs/protocol-description.md) for a in-depth explanation of the communication protocol used.
+The app uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for its TCP/UDP transport capabilities.
+Visit [Protocol Description](https://github.com/MagicalMike/message-broker/blob/master/docs/protocol-description.md) for a in-depth explanation of the communication protocol used.
 
 ## Previews
 
@@ -38,7 +39,7 @@ The app uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for its T
 ### Advanced message routing:
 - [x] Modify the protocol so that it allows for multiple routing;
 
-### Assignment 6: "Last will and testament" mechanism
+### "Last will and testament" mechanism
 - [ ] Subscribers must leave a message whenever they deconnect;
 - [ ] Subscribers must set the "last will and testament" message and queue whenever they connect;
 - [ ] Abnormal disconnections must be reported and "last will and testament" must be sent
