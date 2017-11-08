@@ -7,7 +7,7 @@ The app uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for its T
 
 ## Previews
 
-<img src="https://github.com/MagicalMike/message-broker/blob/master/res/sender.png" alt="Sender" width="40%"/> <img src="https://github.com/MagicalMike/message-broker/blob/master/res/server.png" alt="Server" width="40%"/> <img src="https://github.com/MagicalMike/message-broker/blob/master/res/receiver.png" alt="Receiver" width="40%"/>
+<img src="https://github.com/MagicalMike/message-broker/blob/master/res/sender.png" alt="Sender" width="35%"/> <img src="https://github.com/MagicalMike/message-broker/blob/master/res/server.png" alt="Server" width="35%"/> <img src="https://github.com/MagicalMike/message-broker/blob/master/res/receiver.png" alt="Receiver" width="35%"/>
 
 
 ## Current Progress
