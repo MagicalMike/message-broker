@@ -62,9 +62,10 @@ class QueueStore {
             if queues[index].name == queue {
                 for subscriber in queues[index].subscribers {
                     if subscriber.address != client.address {
-                        queues[index].subscribers.append(client)
+                        return
                     }
                 }
+                queues[index].subscribers.append(client)
             }
         }
     }
