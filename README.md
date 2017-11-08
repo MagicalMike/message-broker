@@ -1,9 +1,9 @@
-# Message Broker
+<a href="https://github.com/MagicalMike/message-broker"><img src="https://github.com/MagicalMike/message-broker/blob/master/res/logo.png"/></a>
+
+---
+
 ## Introduction
-This is a collection of apps built using Cocoa and Swift 4 for the OSX containing:
-* The _Sender_ application, design to send messages to the server
-* The _Server_ application, that receives, processes and sends messages to the _Receiver_
-* The _Receiver_ application, that obtains and displays the messages
+
 
 Message Broker uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for TCP socket communication.  
 TCP was used as the transfer protocol to assure packet transmission.
