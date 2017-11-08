@@ -1,11 +1,7 @@
-<a href="https://github.com/MagicalMike/message-broker"><img src="https://github.com/MagicalMike/message-broker/blob/master/res/logo.png"/></a>
+<a href="https://github.com/MagicalMike/message-broker"><img src="https://github.com/MagicalMike/message-broker/blob/master/res/logo.png" width="50%"/></a>
 ---
 
-## Introduction
-
-
-Message Broker uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for TCP socket communication.  
-TCP was used as the transfer protocol to assure packet transmission.
+Message Broker is an OSX app developed in Swift 4 that uses TCP client-server communication to implement certain message broking functionalities, such as GET / PUSH requests, Publisher - Subscriber mechanics and advanced routing technologies. The app uses [SwiftSocket](https://github.com/swiftsocket/SwiftSocket) for its TCP/UDP communication capabilities. See below for more information about the app and what it can do.
 
 ## Current Progress
 
