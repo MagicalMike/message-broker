@@ -12,7 +12,10 @@ import SwiftSocket
 class QueueStore {
     
     //MARK: - Variable declarations
+    
     private(set) static var queues = [(name: "Main", subscribers: [TCPClient](), contents: [String]())]
+    
+    
     private(set) static var selectedQueue = [String]()
     
     //MARK: - Function implementation
@@ -28,6 +31,8 @@ class QueueStore {
         }
         queues.append((name: queue,subscribers: [TCPClient](), contents: [contents]))
     }
+    
+    
     
     //Sets the selected queue to the one at the specified index
     public static func selectQueue(at index: Int) {
